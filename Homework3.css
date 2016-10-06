@@ -1,0 +1,169 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: yellow;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: lawngreen;
+  border-radius: 0;
+  border: 0;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar-brand h1 { 
+  font-family: ''Segoe UI', Tahoma, Geneva, Verdana, sans-serif', serif;
+  color: tomato;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .85;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+/* Begin of list elements*/
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: #951C49;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.5em;
+}
+/* End of list elements*/
+
+
+/* Header elements */
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -60px;
+}
+/* End of header elements */
+
+/* Begin of body elements */
+section div{
+  color: blue;
+  text-align: center;
+}
+
+section div .one{
+  background: red;
+}
+
+section div .two{
+  background: red;
+}
+
+section div .three{
+  background: red;
+}
+
+setion div div p{
+  font-size: .5em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section div h2{
+  color: black;
+  margin-top: 2px;
+  text-shadow: 1px 1px 1px #222;
+}
+
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  div ul li a{
+    visibility: hidden;
+  }
+
+  .one, .two, .three{
+    width: 29%;
+    height: 200px;
+    margin-left: 3.3%;
+  }
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  div ul li a{
+    visibility: hidden;
+  }
+
+  section div {
+    height: 150px;
+  }
+
+  .one {
+    width: 45%;
+    margin-left: 4%;
+  }
+
+  .two{
+    width: 45%;
+    margin-left: 2%;
+  }
+
+  section div .three{
+    margin-top: 20px;
+    width: 92%;
+    margin-left: 4%;
+  }
+
+}
+
+/********** Small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 70px;
+  }
+  .navbar-brand h1 { 
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+    margin-left: 1px;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1.2em;
+    margin-left: 1px;
+
+  }
+  /* End Header */
+  .one, .two, .three{
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  section div .two{
+    margin-top: 20px;
+  }
+
+  section div .three{
+    margin-top: 20px;
+  }
+
+}
